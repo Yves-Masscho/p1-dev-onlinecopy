@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="600.0" prefWidth="800.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="120.0" percentWidth="0.0" prefWidth="120.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="186.39996337890625" prefWidth="186.39996337890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.60003662109375" minWidth="80.0" percentWidth="0.0" prefWidth="333.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="80.0" percentWidth="0.0" prefWidth="160.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblSokoban" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" prefHeight="70.0" prefWidth="590.0" text="SOKOBAN" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNaam" minWidth="-Infinity" prefHeight="18.0" prefWidth="300.0" text="lblNaam" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label fx:id="lblVoornaam" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" text="lblVoornaam" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="txfNaam" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <TextField fx:id="txfVoornaam" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <TextField fx:id="txfGebruikersnaam" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="lblGebruikersnaam" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" minWidth="-Infinity" prefHeight="18.0" prefWidth="300.0" text="gebruikersnaam" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+            <Label fx:id="lblPasswoord" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" minWidth="-Infinity" prefHeight="18.0" prefWidth="452.0" text="lblPasswoord" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="BOTTOM" />
+            <Button fx:id="btnRegistreer" mnemonicParsing="false" prefHeight="26.0" prefWidth="152.0" text="btnRegistreer" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <PasswordField fx:id="pwfPasswoord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="lblVerplicht" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="336.0" text="Label" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="TOP" />
+            <ImageView fitHeight="101.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@Mannetje.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="101.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@Mannetje.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Label fx:id="lblException" alignment="CENTER" prefHeight="134.0" prefWidth="300.0" textAlignment="CENTER" textFill="#ff1111" wrapText="true" GridPane.columnIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="400.0" minWidth="400.0" prefWidth="400.0" />
+      <ColumnConstraints maxWidth="400.0" minWidth="400.0" prefWidth="400.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="600.0" minHeight="600.0" prefHeight="600.0" />
+   </rowConstraints>
+</fx:root>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+   <ImageView fx:id="mannetje" fitHeight="110.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@Mannetje.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="sokoban" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" prefHeight="70.0" prefWidth="402.0" text="SOKOBAN" textAlignment="CENTER" GridPane.columnIndex="1">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSluitAf" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="btnSluitaf" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+      <Button fx:id="btnWijzigSpel" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="btnWijzigSpel" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="btnMaakNieuwSpel" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="btnMaakNieuwSpel" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="btnSpeelSpel" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="btnSpeelSpel" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+         <Label fx:id="lblBericht" prefHeight="118.0" prefWidth="170.0" text="lblBericht" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblGebruikersnaam" prefHeight="121.0" prefWidth="172.0" text="lblGebruikersnaam" textAlignment="CENTER" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="101.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+         <image>
+            <Image url="@Mannetje.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>
